@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	unsigned long int n, rev=0;
+	int r;
+	clrscr();
+	printf("\n Enter a No:");
+	scanf("%ld", &n);
+	while(n>0)
+	{
+		r=n%10;
+		rev=rev*10+r;
+		n=n/10;
+	}
+	printf("\n Reverse of No=%ld", rev);
+	getch();
+}
